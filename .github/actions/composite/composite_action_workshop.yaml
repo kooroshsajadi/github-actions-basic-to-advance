@@ -16,9 +16,5 @@ runs:
 
     - name: Show GitHub context
       run: |
-        echo "Hello world from Kourosh"
-        echo "Actor: $GITHUB_ACTOR"
-        echo "Workflow: $GITHUB_WORKFLOW"
-        echo "Event: $GITHUB_EVENT_NAME"
-        echo "Ref: $GITHUB_REF"
-        echo "SHA: $GITHUB_SHA"
+        echo "Hello world from Kourosh!"
+        echo "How you doing lads?"
