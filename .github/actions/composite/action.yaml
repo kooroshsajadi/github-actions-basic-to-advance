@@ -1,12 +1,6 @@
 name: Show Composite Action Usage
 description: We are doing this to practice
 
-inputs:
-  message:
-    description: Message to display
-    required: false
-    default: "Hello from composite action made by Kourosh!"
-
 runs:
   using: composite
   steps:
