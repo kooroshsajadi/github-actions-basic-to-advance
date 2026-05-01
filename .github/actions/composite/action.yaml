@@ -5,7 +5,7 @@ inputs:
   message:
     description: Message to display
     required: false
-    default: "Hello from composite action"
+    default: "Hello from composite action made by Kourosh!"
 
 runs:
   using: composite
