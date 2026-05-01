@@ -1,8 +1,20 @@
-name: 'My Composite Action'
-description: 'Prints message from Bash'
+name: Show Composite Action Usage
+description: We are doing this to practice
+
+inputs:
+  message:
+    description: Message to display
+    required: false
+    default: "Hello from composite action"
+
 runs:
-  using: 'composite'
+  using: composite
   steps:
-    - name: Say Hello from Bash
-      shell: bash
-      run: bash script-src/script.sh
+    - name: Show custom message
+      run: |
+        echo "${{ inputs.message }}"
+
+    - name: Show GitHub context
+      run: |
+        echo "Hello world from Kourosh!"
+        echo "How you doing lads?"
