@@ -14,11 +14,11 @@ jobs:
 
       - name: Display secret value
         run: |
-          echo "Secret value (first 4 chars): ${{ secrets.MY_SECRET }}" | cut -c1-4
+          echo "Secret value (first 5 chars): ${{ secrets.MY_SECRET }}" | cut -c1-5
         
       - name: Use secret in environment variable
         env:
           SECRET_TOKEN: ${{ secrets.MY_SECRET }}
         run: |
           echo "Using secret from environment variable"
-          echo "First few chars of secret: ${SECRET_TOKEN:0:4}"
+          echo "First few chars of secret: ${SECRET_TOKEN:0:5}"
