@@ -1,0 +1,26 @@
+name: Show Composite Action Usage
+description: We are doing this to practice
+
+inputs:
+  message:
+    description: Message to display
+    required: false
+    default: "Hello from composite action"
+
+runs:
+  using: composite
+  steps:
+    - name: Show custom message
+      shell: bash
+      run: |
+        echo "${{ inputs.message }}"
+
+    - name: Show GitHub context
+      shell: bash
+      run: |
+        echo "Repository: $GITHUB_REPOSITORY"
+        echo "Actor: $GITHUB_ACTOR"
+        echo "Workflow: $GITHUB_WORKFLOW"
+        echo "Event: $GITHUB_EVENT_NAME"
+        echo "Ref: $GITHUB_REF"
+        echo "SHA: $GITHUB_SHA"
