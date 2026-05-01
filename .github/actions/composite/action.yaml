@@ -4,10 +4,6 @@ description: We are doing this to practice
 runs:
   using: composite
   steps:
-    - name: Show custom message
-      run: |
-        echo "${{ inputs.message }}"
-
     - name: Show GitHub context
       run: |
         echo "Hello world from Kourosh!"
