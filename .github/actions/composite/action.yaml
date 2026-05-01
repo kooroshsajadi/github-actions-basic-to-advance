@@ -5,6 +5,7 @@ runs:
   using: composite
   steps:
     - name: Show GitHub context
+      shell: bash
       run: |
         echo "Hello world from Kourosh!"
         echo "How you doing lads?"
